@@ -79,16 +79,34 @@
 			font-size: 1.5em;
 		}
 
-	header
-	{
-		margin: 0 0 2em 0;
+	p {
+		text-align: left;
 	}
-
-		header > p
-		{
-			margin: 1em 0 0 0;
-		}
-
+	
+	div.chatline
+	{
+		box-shadow: 0 0.05em 0.15em 0 rgba(0,0,0,0.05);
+		margin-bottom: 8px;
+		padding: 2px 14px 2px 14px;
+		background-color: #fff;
+		border-radius: 8px;
+	}
+	img.portrait
+	{
+		display: block;
+		margin: -28px 0 0 -20px;
+		width: 48px;
+		height: 48px;
+		border-radius: 8px;
+	}
+	
+	#main .bottom
+	{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+	}
 	footer
 	{
 		margin: 2em 0 0 0;
