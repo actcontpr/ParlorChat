@@ -94,7 +94,7 @@
 	img.portrait
 	{
 		display: block;
-		margin: -28px 0 0 -20px;
+		margin: -8px 0 0 -20px;
 		width: 48px;
 		height: 48px;
 		border-radius: 8px;
@@ -455,7 +455,12 @@
 				table.default tbody
 				{
 				}
-
+	/* Post */
+	.post {
+		width: 100%;
+		padding: 2rem;
+		background: #e8edec url('images/overlay.png');
+	}
 	/* Button */
 		
 		input[type="text"],
