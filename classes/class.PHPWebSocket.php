@@ -159,7 +159,17 @@ class PHPWebSocket
 							$result = socket_getpeername($client, $clientIP);
 							$clientIP = ip2long($clientIP);
 
-							if ($result !== false && $this->wsClientCount < self::WS_MAX_CLIENTS && (!isset($this->wsClientIPCount[$clientIP]) || $this->wsClientIPCount[$clientIP] < self::WS_MAX_CLIENTS_PER_IP)) {
+							if (
+								$result !== false 
+								&&
+								$this->wsClientCount < self::WS_MAX_CLIENTS
+								&&
+								(
+									!isset($this->wsClientIPCount[$clientIP])
+									||
+									$this->wsClientIPCount[$clientIP] < self::WS_MAX_CLIENTS_PER_IP
+								)
+							){
 								$this->wsAddClient($client, $clientIP);
 							}
 							else {
